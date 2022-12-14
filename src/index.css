@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+    url('./fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson-pro';
+  src: local('Crimson-pro'),
+    url('./fonts//Crimson_Pro/CrimsonPro-VariableFont_wght.ttf')
+      format('truetype');
+}
