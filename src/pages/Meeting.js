@@ -1,18 +1,23 @@
 import React from 'react'
-import VideoRoom from '../components/meeting/VideoRoom'
+import VideoRoom from '../components/meeting/videoRoom/VideoRoom'
+import { atom, useAtom } from 'jotai'
+import { exampleAtom } from '../components/store/Atoms'
+import MeetingManager from '../components/meeting/meetingManager/MeetingManager'
 
 //will contain video room and meeting manager
 
 const Meeting = () => {
+  const [text, setText] = useAtom(exampleAtom)
   return (
     <div className="col">
-      <div className="row">
+      <div className="row g-0">
         <div className="col-12 col-sm-6">
           <VideoRoom />
         </div>
         <div className="col-12 col-sm-6">
           {' '}
-          <p>meeting manager</p>
+          <p>Jotai text: {text}</p>
+          <MeetingManager />
         </div>
       </div>
     </div>

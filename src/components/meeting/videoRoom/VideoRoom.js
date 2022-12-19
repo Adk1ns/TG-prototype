@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
+import { atom, useAtom } from 'jotai'
+import { exampleAtom } from '../../store/Atoms'
 import Peer from 'peerjs'
+import VideoRoomStyles from './VideoRoomStyles'
+import user from '../../../images/user.png'
 
 const VideoRoom = () => {
   const [peerId, setPeerId] = useState('')
@@ -7,6 +11,7 @@ const VideoRoom = () => {
   const remoteVideoRef = useRef(null)
   const currentUserVideoRef = useRef(null)
   const peerInstance = useRef(null)
+  const [text, setText] = useAtom(exampleAtom)
 
   useEffect(() => {
     const peer = new Peer()
@@ -55,21 +60,38 @@ const VideoRoom = () => {
   }
 
   return (
-    <div className="App">
-      <h1>Current user id is {peerId}</h1>
+    <VideoRoomStyles>
+      <h5>Jotai Text: {text}</h5>
+      <button onClick={() => setText('test')}>click</button>
+      <h5>Current user id is {peerId}</h5>
       <input
         type="text"
         value={remotePeerIdValue}
         onChange={(e) => setRemotePeerIdValue(e.target.value)}
       />
       <button onClick={() => call(remotePeerIdValue)}>Call</button>
-      <div>
+      <div className="present-main">
         <video ref={currentUserVideoRef} />
       </div>
-      <div>
-        <video ref={remoteVideoRef} />
+      <div className="row g-0">
+        <div className="present-sub">
+          {!remotePeerIdValue && <img src={user} />}
+          {remotePeerIdValue && <video ref={remoteVideoRef} />}
+        </div>
+        <div className="present-sub">
+          {!remotePeerIdValue && <img src={user} />}
+          {remotePeerIdValue && <video ref={remoteVideoRef} />}
+        </div>
+        <div className="present-sub">
+          {!remotePeerIdValue && <img src={user} />}
+          {remotePeerIdValue && <video ref={remoteVideoRef} />}
+        </div>
+        <div className="present-sub">
+          {!remotePeerIdValue && <img src={user} />}
+          {remotePeerIdValue && <video ref={remoteVideoRef} />}
+        </div>
       </div>
-    </div>
+    </VideoRoomStyles>
   )
 }
 
