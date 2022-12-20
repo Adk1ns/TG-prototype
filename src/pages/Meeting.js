@@ -11,10 +11,10 @@ const Meeting = () => {
   return (
     <div className="col">
       <div className="row g-0">
-        <div className="col-12 col-sm-6">
+        <div className="col-12 col-sm-6 p-3">
           <VideoRoom />
         </div>
-        <div className="col-12 col-sm-6">
+        <div className="col-12 col-sm-6 p-3">
           {' '}
           <p>Jotai text: {text}</p>
           <MeetingManager />
