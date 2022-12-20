@@ -61,15 +61,6 @@ const VideoRoom = () => {
 
   return (
     <VideoRoomStyles>
-      <h5>Jotai Text: {text}</h5>
-      <button onClick={() => setText('test')}>click</button>
-      <h5>Current user id is {peerId}</h5>
-      <input
-        type="text"
-        value={remotePeerIdValue}
-        onChange={(e) => setRemotePeerIdValue(e.target.value)}
-      />
-      <button onClick={() => call(remotePeerIdValue)}>Call</button>
       <div className="present-main">
         <video ref={currentUserVideoRef} />
       </div>
@@ -91,6 +82,15 @@ const VideoRoom = () => {
           {remotePeerIdValue && <video ref={remoteVideoRef} />}
         </div>
       </div>
+      <h5>Jotai Text: {text}</h5>
+      <button onClick={() => setText('test')}>click</button>
+      <h5>Current user id is {peerId}</h5>
+      <input
+        type="text"
+        value={remotePeerIdValue}
+        onChange={(e) => setRemotePeerIdValue(e.target.value)}
+      />
+      <button onClick={() => call(remotePeerIdValue)}>Call</button>
     </VideoRoomStyles>
   )
 }
