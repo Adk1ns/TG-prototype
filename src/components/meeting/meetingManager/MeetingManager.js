@@ -6,7 +6,7 @@ import Quiz from './quiz/Quiz'
 const MeetingManager = () => {
   return (
     <MeetingManagerStyles>
-      MeetingManager
+      <h5>Meeting Manager</h5>
       <div className="p-1 p-md-3">
         <Questionaire />
         <Quiz />

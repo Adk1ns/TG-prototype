@@ -82,8 +82,8 @@ const VideoRoom = () => {
           {remotePeerIdValue && <video ref={remoteVideoRef} />}
         </div>
       </div>
-      <h5>Jotai Text: {text}</h5>
-      <button onClick={() => setText('test')}>click</button>
+      {/* <h5>Jotai Text: {text}</h5>
+      <button onClick={() => setText('test')}>click</button> */}
       <h5>Current user id is {peerId}</h5>
       <input
         type="text"
