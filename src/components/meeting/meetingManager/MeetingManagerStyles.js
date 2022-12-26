@@ -8,11 +8,13 @@ const MeetingManagerStyles = styled.div`
   h5 {
     color: #355670;
   }
-  .outline {
+  ${
+    '' /* .outline {
     border: 1px solid #888888;
     border-radius: 0.25rem;
     background-color: white;
     margin-bottom: 1rem;
+  } */
   }
 `
 
