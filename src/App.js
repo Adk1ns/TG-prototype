@@ -18,7 +18,8 @@ function App() {
           <main>
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<p>landing page</p>} />
+                <Route path="home" element={<Home />} />
                 <Route path="meeting" element={<Meeting />} />
                 <Route path="planner" element={<p>project planner</p>} />
                 <Route path="explore" element={<p>explore groups</p>} />

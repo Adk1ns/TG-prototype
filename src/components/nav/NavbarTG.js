@@ -27,7 +27,7 @@ const NavbarTG = () => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink href="/home">Home</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/meeting">Meeting</NavLink>
