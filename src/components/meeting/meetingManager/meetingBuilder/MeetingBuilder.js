@@ -1,4 +1,5 @@
 import { Button } from '@mui/material'
+import StepperTG from '../../../stepper/StepperTG'
 
 const MeetingBuilder = ({ meetingInProgress, setMeetingInProgress }) => {
   console.log(meetingInProgress)
@@ -10,6 +11,7 @@ const MeetingBuilder = ({ meetingInProgress, setMeetingInProgress }) => {
   return (
     <div className="outline p-3">
       <h5>Select meeting components</h5>
+      <StepperTG />
       <div className="outline p-3">
         <h5>Questionnaire</h5>
         <input placeholder="Question" />
