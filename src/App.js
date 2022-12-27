@@ -7,12 +7,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Meeting from './pages/Meeting'
 import { ThemeProvider } from 'styled-components'
-import { theme, theme2 } from './components/Themes'
+import { mainTheme, darkTheme } from './components/Themes'
 
 function App() {
   return (
     <JotaiProvider>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={mainTheme}>
         <GlobalStyles>
           <NavbarTG />
           <main>
