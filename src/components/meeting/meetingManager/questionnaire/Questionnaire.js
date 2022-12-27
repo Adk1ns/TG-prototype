@@ -7,11 +7,11 @@ import FormLabel from '@mui/material/FormLabel'
 import TextField from '@mui/material/TextField'
 import Avatar from '@mui/material/Avatar'
 
-const Questionaire = () => {
+const Questionnaire = () => {
   return (
     <div className="col p-3 outline">
       <header className="d-flex justify-content-between p-1">
-        <h4>Questionaire</h4>
+        <h4>Questionnaire</h4>
         <div className="d-flex justify-content-between">
           <p className="m-2">John</p>
           <Avatar />
@@ -79,4 +79,4 @@ const Questionaire = () => {
   )
 }
 
-export default Questionaire
+export default Questionnaire

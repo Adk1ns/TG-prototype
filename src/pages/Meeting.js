@@ -5,6 +5,7 @@ import { exampleAtom } from '../components/store/Atoms'
 import MeetingManager from '../components/meeting/meetingManager/MeetingManager'
 import { Button } from '@mui/material'
 import MeetingBuilder from '../components/meeting/meetingManager/meetingBuilder/MeetingBuilder'
+import UpcomingMeetings from '../components/meeting/meetingManager/meetingBuilder/UpcomingMeetings'
 
 //will contain video room and meeting manager
 
@@ -17,7 +18,7 @@ const Meeting = () => {
   }
 
   return (
-    <div className="col">
+    <div className="col-12 p-lg-2">
       {meetingInProgress && (
         <div className="row g-0">
           <div className="col-12 col-sm-6 p-3">
@@ -28,15 +29,14 @@ const Meeting = () => {
             </Button>
           </div>
           <div className="col-12 col-sm-6 p-3">
-            {' '}
             {/* <p>Jotai text: {text}</p> */}
             <MeetingManager />
           </div>
         </div>
       )}
       {!meetingInProgress && (
-        <div className="p-5">
-          <p>build a meeting</p>
+        <div className="row p-2 p-lg-5 g-0">
+          <UpcomingMeetings />
           <MeetingBuilder
             meetingInProgress={meetingInProgress}
             setMeetingInProgress={setMeetingInProgress}

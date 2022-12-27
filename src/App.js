@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Meeting from './pages/Meeting'
 import { ThemeProvider } from 'styled-components'
 import { mainTheme, darkTheme } from './components/Themes'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               </Routes>
             </BrowserRouter>
           </main>
+          <Footer />
         </GlobalStyles>
       </ThemeProvider>
     </JotaiProvider>

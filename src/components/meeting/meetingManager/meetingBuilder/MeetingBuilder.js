@@ -9,20 +9,22 @@ const MeetingBuilder = ({ meetingInProgress, setMeetingInProgress }) => {
   }
 
   return (
-    <div className="outline p-3">
+    <div className="outline p-2 p-lg-3">
       <h5>Select meeting components</h5>
-      <StepperTG />
-      <div className="outline p-3">
+      <div className="py-2 py-lg-3">
+        <StepperTG />
+      </div>
+      <div className="outline p-2 p-lg-3">
         <h5>Questionnaire</h5>
         <input placeholder="Question" />
         <button>+</button>
       </div>
-      <div className="outline p-3">
+      <div className="outline p-2 p-lg-3">
         <h5>Poll</h5>
         <input placeholder="Option" />
         <button>+</button>
       </div>
-      <div className="outline p-3">
+      <div className="outline p-2 p-lg-3">
         <h5>Quiz</h5>
         <input placeholder="Question" />
         <input placeholder="Answer" />
