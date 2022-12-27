@@ -1,0 +1,26 @@
+{
+  "firstName": "Michael",
+  "lastName": "McPlaceholder",
+  "UID": "a1927",
+  "email": "jeredkins@gmail.com",
+  "avatar": "none",
+  "membership": "pro",
+  "gender": "male",
+  "age": 24,
+  "address": {
+    "streetAddress": "126",
+    "city": "San Jose",
+    "state": "CA",
+    "postalCode": "394221"
+  },
+  "phoneNumbers": [{ "type": "home", "number": "5558675309" }],
+  "score": [
+    { "points": 35, "goalsCompleted": 4, "propsGiven": 13, "propsReceived": 8 }
+  ],
+  "networks": [{}],
+  "peers": [{}],
+  "projects": [{}],
+  "goals": [{}],
+  "habits": [{}],
+  "schedule": [{}]
+}
