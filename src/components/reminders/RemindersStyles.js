@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const RemindersStyles = styled.div`
-  width: 80%;
+  width: 100%;
   color: ${(props) => props.theme.three};
 `
 

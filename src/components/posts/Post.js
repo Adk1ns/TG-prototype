@@ -35,7 +35,7 @@ const Post = () => {
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardHeader
         avatar={<Avatar aria-label="recipe">R</Avatar>}
         action={

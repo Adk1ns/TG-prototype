@@ -12,6 +12,7 @@ const VideoRoomStyles = styled.div`
   .present-sub {
     width: 25%;
     border: 1px solid lightgray;
+    overflow: hidden;
     video {
       width: 100%;
     }

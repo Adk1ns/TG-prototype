@@ -10,7 +10,7 @@ import { Tooltip } from '@mui/material'
 const Reminders = () => {
   return (
     <RemindersStyles>
-      <div className="d-flex justify-content-around outline px-5 m-3">
+      <div className="d-flex justify-content-around outline m-3">
         <div className="m-2 text-center">
           <AccessAlarm fontSize="large" />
           reminder
@@ -20,7 +20,7 @@ const Reminders = () => {
           reminder
         </div>
         <div className="m-2 text-center">
-          <AddAPhotoTwoToneIcon fontSize="large" color="defualt" />
+          <AddAPhotoTwoToneIcon fontSize="large" color="default" />
           reminder
         </div>
         <Tooltip title="burr">

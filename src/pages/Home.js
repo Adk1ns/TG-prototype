@@ -8,23 +8,20 @@ import Reminders from '../components/reminders/Reminders'
 
 const Home = () => {
   return (
-    <div className="col px-3">
+    <div className="col px-lg-3">
       <div className="row">
-        <div className="col-12 col-sm-6 px-5 py-2">
+        <div className="col-12 col-md-6 px-lg-5 py-2">
           <Reminders />
-          <div className="px-5">
+          <div className="px-lg-5">
             <div className="my-2">
               <Post />
-            </div>
-            <div className="my-2">
-              <MusicPost />
             </div>
             <div className="my-2">
               <Post />
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 px-5 py-2">
+        <div className="col-12 col-md-6 px-5 py-2">
           <HabitTracker />
           <div>
             <p>suggested groups / people</p>
