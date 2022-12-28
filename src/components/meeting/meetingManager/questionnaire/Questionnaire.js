@@ -7,11 +7,12 @@ import FormLabel from '@mui/material/FormLabel'
 import TextField from '@mui/material/TextField'
 import Avatar from '@mui/material/Avatar'
 
-const Questionnaire = () => {
+const Questionnaire = ({ data }) => {
+  console.log(data)
   return (
     <div className="col p-3 outline">
       <header className="d-flex justify-content-between p-1">
-        <h4>Questionnaire</h4>
+        <h4>{data.type}</h4>
         <div className="d-flex justify-content-between">
           <p className="m-2">John</p>
           <Avatar />
@@ -57,22 +58,18 @@ const Questionnaire = () => {
               label="Thunder"
             />
           </RadioGroup>
-          <h5>Question number one?</h5>
-          <TextField
-            multiline
-            id="outlined-basic"
-            label="Outlined"
-            variant="outlined"
-            rows={4}
-          />
-          <h5>Question number two?</h5>
-          <TextField
-            multiline
-            id="outlined-basic"
-            label="Outlined"
-            variant="outlined"
-            rows={4}
-          />
+          {data.details.map((question, index) => (
+            <div key={index}>
+              <h5>{question.question}</h5>
+              <TextField
+                multiline
+                id="outlined-basic"
+                label=""
+                variant="outlined"
+                rows={4}
+              />
+            </div>
+          ))}
         </FormControl>
       </div>
     </div>

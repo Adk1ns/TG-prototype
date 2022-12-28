@@ -8,7 +8,7 @@ import FormLabel from '@mui/material/FormLabel'
 import Button from '@mui/material/Button'
 import Avatar from '@mui/material/Avatar'
 
-const Quiz = () => {
+const Quiz = ({ data }) => {
   const [value, setValue] = React.useState('')
   const [error, setError] = React.useState(false)
   const [helperText, setHelperText] = React.useState('Choose wisely')

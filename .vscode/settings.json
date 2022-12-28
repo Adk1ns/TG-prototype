@@ -4,5 +4,5 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.requireConfig": true,
   "prettier.configPath": ".prettierrc.json",
-  "cSpell.words": ["lightgray", "peerjs"]
+  "cSpell.words": ["Jered", "lightgray", "peerjs"]
 }

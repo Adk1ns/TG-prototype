@@ -1,8 +1,36 @@
 {
   "meetingTitle": "Dev stand up",
   "date": "",
-  "host": [{}],
-  "network": "",
-  "guests": [],
-  "meetingComponents": [{}]
+  "host": [{ "uid": "a1927" }],
+  "network": "devTeam",
+  "guests": [
+    { "firstName": "Jered", "lastName": "Adkins" },
+    { "firstName": "Bill", "lastName": "Cook" }
+  ],
+  "meetingComponents": [
+    {
+      "type": "Questionnaire",
+      "details": [
+        { "question": "What is your favorite color?", "answer": "blue" },
+        { "question": "What is your favorite animal?", "answer": "dog" }
+      ]
+    },
+    {
+      "type": "Quiz",
+      "details": [
+        {
+          "question": "What is your preferred workspace?",
+          "options": ["home office", "coffee shop", "the beach"],
+          "selected": []
+        }
+      ]
+    },
+    {
+      "type": "Questionnaire",
+      "details": [
+        { "question": "What is your favorite color?", "answer": "blue" },
+        { "question": "What is your favorite animal?", "answer": "dog" }
+      ]
+    }
+  ]
 }
