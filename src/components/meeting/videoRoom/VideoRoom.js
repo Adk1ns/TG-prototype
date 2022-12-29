@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { atom, useAtom } from 'jotai'
-import { exampleAtom } from '../../store/Atoms'
+import { exampleAtom } from '../../../data/store/Atoms'
 import Peer from 'peerjs'
 import VideoRoomStyles from './VideoRoomStyles'
 import user from '../../../images/user.png'

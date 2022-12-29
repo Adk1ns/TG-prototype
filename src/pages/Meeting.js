@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import VideoRoom from '../components/meeting/videoRoom/VideoRoom'
 import { atom, useAtom } from 'jotai'
-import { exampleAtom } from '../components/store/Atoms'
+import { exampleAtom } from '../data/store/Atoms'
 import MeetingManager from '../components/meeting/meetingManager/MeetingManager'
 import { Button } from '@mui/material'
 import MeetingBuilder from '../components/meeting/meetingManager/meetingBuilder/MeetingBuilder'
