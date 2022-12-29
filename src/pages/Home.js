@@ -5,6 +5,7 @@ import HabitTracker from '../components/habitTracker/HabitTracker'
 import MusicPost from '../components/posts/MusicPost'
 import Post from '../components/posts/Post'
 import Reminders from '../components/reminders/Reminders'
+import Suggestions from '../components/suggestions/Suggestions'
 
 const Home = () => {
   return (
@@ -23,10 +24,8 @@ const Home = () => {
         </div>
         <div className="col-12 col-md-6 px-5 py-2">
           <HabitTracker />
-          <div>
-            <p>suggested groups / people</p>
-          </div>
           <SimpleSnackbar />
+          <Suggestions />
         </div>
       </div>
     </div>
