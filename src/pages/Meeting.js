@@ -7,10 +7,11 @@ import { Button } from '@mui/material'
 import MeetingBuilder from '../components/meeting/meetingManager/meetingBuilder/MeetingBuilder'
 import UpcomingMeetings from '../components/meeting/meetingManager/meetingBuilder/UpcomingMeetings'
 import mockMeeting from '../data/mockMeeting.json'
+import MeetingLog from '../components/meeting/meetingLog/MeetingLog'
 
 const Meeting = () => {
   const [text, setText] = useAtom(exampleAtom)
-  const [meetingInProgress, setMeetingInProgress] = useState(true)
+  const [meetingInProgress, setMeetingInProgress] = useState(false)
   const [meetingDetails, setMeetingDetails] = useState(mockMeeting)
 
   const StartMeeting = () => {
@@ -44,9 +45,8 @@ const Meeting = () => {
               meetingDetails={meetingDetails}
             />
           </div>
-          {/* remove outline  V*/}
-          <div className="col-6 p-lg-2 outline">
-            <p>meeting log</p>
+          <div className="col-6 p-lg-2">
+            <MeetingLog />
           </div>
         </div>
       )}

@@ -27,7 +27,6 @@ const Home = () => {
             <p>suggested groups / people</p>
           </div>
           <SimpleSnackbar />
-          <Alert severity="error">This is an error alert — check it out!</Alert>
         </div>
       </div>
     </div>

@@ -6,7 +6,6 @@ const MeetingComponents = ({ components }) => {
   console.log(components)
   return (
     <div>
-      {/* <p>hi</p> */}
       {components.type === 'Questionnaire' && (
         <Questionnaire data={components} />
       )}
