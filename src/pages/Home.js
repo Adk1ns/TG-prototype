@@ -13,6 +13,11 @@ const Home = () => {
       <div className="row">
         <div className="col-12 col-md-6 px-lg-5 py-2">
           <Reminders />
+          <HabitTracker />
+          <SimpleSnackbar />
+          <Suggestions />
+        </div>
+        <div className="col-12 col-md-6 px-5 py-2">
           <div className="px-lg-5">
             <div className="my-2">
               <Post />
@@ -21,11 +26,6 @@ const Home = () => {
               <Post />
             </div>
           </div>
-        </div>
-        <div className="col-12 col-md-6 px-5 py-2">
-          <HabitTracker />
-          <SimpleSnackbar />
-          <Suggestions />
         </div>
       </div>
     </div>

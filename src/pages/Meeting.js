@@ -38,14 +38,14 @@ const Meeting = () => {
       {!meetingInProgress && (
         <div className="row p-2 p-lg-5 g-0">
           <UpcomingMeetings />
-          <div className="col-6 p-lg-2">
+          <div className="col-12 col-lg-6 p-lg-2">
             <MeetingBuilder
               meetingInProgress={meetingInProgress}
               setMeetingInProgress={setMeetingInProgress}
               meetingDetails={meetingDetails}
             />
           </div>
-          <div className="col-6 p-lg-2">
+          <div className="col-12 col-lg-6 p-lg-2">
             <MeetingLog />
           </div>
         </div>
