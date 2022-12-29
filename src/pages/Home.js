@@ -1,4 +1,3 @@
-import { Alert } from '@mui/material'
 import React from 'react'
 import SimpleSnackbar from '../components/experimental/SimpleSnackbar.'
 import HabitTracker from '../components/habitTracker/HabitTracker'
@@ -17,7 +16,7 @@ const Home = () => {
           <SimpleSnackbar />
           <Suggestions />
         </div>
-        <div className="col-12 col-md-6 px-5 py-2">
+        <div className="col-12 col-md-6 px-lg-5 py-2">
           <div className="px-lg-5">
             <div className="my-2">
               <Post />

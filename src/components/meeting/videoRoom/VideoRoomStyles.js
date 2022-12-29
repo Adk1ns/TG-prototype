@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 const VideoRoomStyles = styled.div`
-  border: 1px solid #888888;
-  border-radius: 0.25rem;
   overflow: hidden;
   .present-main {
     width: 100%;

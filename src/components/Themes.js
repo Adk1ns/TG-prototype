@@ -3,9 +3,9 @@
 export const mainTheme = {
   mainBG: '#e9ecef',
   bg: 'white',
-  three: '#355670', // blue HEADERS
-  four: '#355670',
-  five: '#888888', // darkgray TEXT OUTLINE
+  text: '#888888', // dark gray TEXT
+  four: '#355670', // dark blue HEADERS
+  five: '#8888', // gray OUTLINE
   six: '#00B582', // green HIGHLIGHT
   seven: '#26A3AD', // green
   eight: '#FFDD00', //yellow

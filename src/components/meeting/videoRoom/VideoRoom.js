@@ -61,36 +61,38 @@ const VideoRoom = () => {
 
   return (
     <VideoRoomStyles>
-      <div className="present-main">
-        <video ref={currentUserVideoRef} />
-      </div>
-      <div className="row g-0">
-        <div className="present-sub">
-          {!remotePeerIdValue && <img src={user} />}
-          {remotePeerIdValue && <video ref={remoteVideoRef} />}
+      <div className="outline">
+        <div className="present-main">
+          <video ref={currentUserVideoRef} />
         </div>
-        <div className="present-sub">
-          {!remotePeerIdValue && <img src={user} />}
-          {remotePeerIdValue && <video ref={remoteVideoRef} />}
+        <div className="row g-0">
+          <div className="present-sub">
+            {!remotePeerIdValue && <img src={user} />}
+            {remotePeerIdValue && <video ref={remoteVideoRef} />}
+          </div>
+          <div className="present-sub">
+            {!remotePeerIdValue && <img src={user} />}
+            {remotePeerIdValue && <video ref={remoteVideoRef} />}
+          </div>
+          <div className="present-sub">
+            {!remotePeerIdValue && <img src={user} />}
+            {remotePeerIdValue && <video ref={remoteVideoRef} />}
+          </div>
+          <div className="present-sub">
+            {!remotePeerIdValue && <img src={user} />}
+            {remotePeerIdValue && <video ref={remoteVideoRef} />}
+          </div>
         </div>
-        <div className="present-sub">
-          {!remotePeerIdValue && <img src={user} />}
-          {remotePeerIdValue && <video ref={remoteVideoRef} />}
-        </div>
-        <div className="present-sub">
-          {!remotePeerIdValue && <img src={user} />}
-          {remotePeerIdValue && <video ref={remoteVideoRef} />}
-        </div>
-      </div>
-      {/* <h5>Jotai Text: {text}</h5>
+        {/* <h5>Jotai Text: {text}</h5>
       <button onClick={() => setText('test')}>click</button> */}
-      <h5>Current user id is {peerId}</h5>
-      <input
-        type="text"
-        value={remotePeerIdValue}
-        onChange={(e) => setRemotePeerIdValue(e.target.value)}
-      />
-      <button onClick={() => call(remotePeerIdValue)}>Call</button>
+        <h5>Current user id is {peerId}</h5>
+        <input
+          type="text"
+          value={remotePeerIdValue}
+          onChange={(e) => setRemotePeerIdValue(e.target.value)}
+        />
+        <button onClick={() => call(remotePeerIdValue)}>Call</button>
+      </div>
     </VideoRoomStyles>
   )
 }
