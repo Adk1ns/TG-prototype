@@ -9,7 +9,7 @@ const steps = ['Select components', 'Customize', 'Schedule / Start']
 export default function StepperTG() {
   return (
     <Box sx={{ width: '100%' }}>
-      <Stepper activeStep={1} alternativeLabel>
+      <Stepper activeStep={-1} alternativeLabel>
         {steps.map((label) => (
           <Step key={label}>
             <StepLabel>{label}</StepLabel>

@@ -11,21 +11,21 @@ const Reminders = () => {
   return (
     <RemindersStyles>
       <div className="d-flex justify-content-around outline">
-        <div className="m-2 text-center">
+        <div className="m-2 text-center reminder">
           <AccessAlarm fontSize="large" />
           reminder
         </div>
-        <div className="m-2 text-center">
+        <div className="m-2 text-center reminder">
           <ThreeDRotation fontSize="large" />
           reminder
         </div>
         <Tooltip title="burr">
-          <div className="m-2 text-center">
+          <div className="m-2 text-center reminder">
             <AcUnitIcon fontSize="large" />
             reminder
           </div>
         </Tooltip>
-        <div className="m-2 text-center">
+        <div className="m-2 text-center reminder">
           <Badge badgeContent={4} color="primary">
             <MailIcon fontSize="large" />
           </Badge>

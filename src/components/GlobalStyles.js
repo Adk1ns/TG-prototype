@@ -18,6 +18,13 @@ const GlobalStyles = styled.div`
     color: ${(props) => props.theme.text};
   }
 
+  header {
+    border-bottom: 1px solid ${(props) => props.theme.five};
+    padding: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .highlight {
     color: ${(props) => props.theme.six};
   }
@@ -28,6 +35,10 @@ const GlobalStyles = styled.div`
     background-color: ${(props) => props.theme.bg};
     margin-bottom: 1rem;
     box-shadow: 1px 1px 3px #8888;
+  }
+
+  .up-one {
+    margin-top: -0.5rem;
   }
 `
 

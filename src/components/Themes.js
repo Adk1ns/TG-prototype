@@ -9,7 +9,7 @@ export const mainTheme = {
   six: '#00B582', // green HIGHLIGHT
   seven: '#26A3AD', // green
   eight: '#FFDD00', //yellow
-  nine: '#b2ddff', // lightblue
+  nine: '#CA3535', // red
 }
 
 export const darkTheme = {

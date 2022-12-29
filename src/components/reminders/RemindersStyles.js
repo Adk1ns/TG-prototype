@@ -2,7 +2,13 @@ import styled from 'styled-components'
 
 const RemindersStyles = styled.div`
   width: 100%;
-  color: ${(props) => props.theme.three};
+
+  .reminder {
+    color: ${(props) => props.theme.three};
+    &:hover {
+      color: ${(props) => props.theme.six};
+    }
+  }
 `
 
 export default RemindersStyles

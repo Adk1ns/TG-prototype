@@ -36,7 +36,7 @@ const Meeting = () => {
         </div>
       )}
       {!meetingInProgress && (
-        <div className="row p-2 p-lg-5 g-0">
+        <div className="row p-2 p-lg-5 g-0 pt-lg-3">
           <UpcomingMeetings />
           <div className="col-12 col-lg-6 p-lg-2">
             <MeetingBuilder
