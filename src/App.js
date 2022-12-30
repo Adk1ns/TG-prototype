@@ -9,6 +9,7 @@ import Meeting from './pages/Meeting'
 import { ThemeProvider } from 'styled-components'
 import { mainTheme, darkTheme } from './components/Themes'
 import Footer from './components/footer/Footer'
+import About from './pages/About'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <main>
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<p>landing page</p>} />
+                <Route path="/" element={<About />} />
                 <Route path="home" element={<Home />} />
                 <Route path="meeting" element={<Meeting />} />
                 <Route path="planner" element={<p>project planner</p>} />

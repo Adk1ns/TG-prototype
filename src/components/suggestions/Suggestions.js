@@ -17,15 +17,6 @@ const Suggestions = () => {
           <Avatar />
           Book Club
         </div>
-        <p>ideas on what each row should contain</p>
-        <div className="d-flex justify-content-around">
-          <>
-            <Avatar />
-            <p>Mr Bill's Math Class</p>
-            <p>10:30 Wednesdays</p>
-          </>
-          <button>Apply</button>
-        </div>
       </div>
     </div>
   )

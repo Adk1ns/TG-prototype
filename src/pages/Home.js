@@ -12,7 +12,6 @@ const Home = () => {
         <div className="col-12 col-md-6 px-lg-5 py-4">
           <Reminders />
           <HabitTracker />
-          <SimpleSnackbar />
           <Suggestions />
         </div>
         <div className="col-12 col-md-6 px-lg-5 py-2">
