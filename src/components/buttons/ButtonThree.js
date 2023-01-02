@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-const ButtonMainStyle = styled.div`
+const ButtonStyle = styled.div`
   min-height: 2rem;
-  width: 4rem;
+  width: 5.5rem;
   border-radius: 0.25rem;
-  background-color: ${(props) => props.theme.four};
+  background-color: ${(props) => props.theme.eight};
   box-shadow: 1px 1px 1px lightgray;
-  color: ${(props) => props.theme.bg};
+  color: black;
   font-weight: 700;
   padding: 0.2rem;
   display: flex;
@@ -21,8 +21,8 @@ const ButtonMainStyle = styled.div`
   }
 `
 
-const ButtonMain = ({ text }) => {
-  return <ButtonMainStyle>{text}</ButtonMainStyle>
+const ButtonThree = ({ text }) => {
+  return <ButtonStyle>{text}</ButtonStyle>
 }
 
-export default ButtonMain
+export default ButtonThree

@@ -40,6 +40,13 @@ const GlobalStyles = styled.div`
   .up-one {
     margin-top: -0.5rem;
   }
+
+  .color-seven {
+    color: ${(props) => props.theme.seven};
+  }
+  .color-nine {
+    color: ${(props) => props.theme.nine};
+  }
 `
 
 export default GlobalStyles
