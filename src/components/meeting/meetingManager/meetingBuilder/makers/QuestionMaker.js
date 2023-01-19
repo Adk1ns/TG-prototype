@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ButtonFour from '../../../../buttons/ButtonFour'
 import ButtonMain from '../../../../buttons/ButtonMain'
 
 const QuestionMaker = () => {
+  const [questions, setQuestions] = useState([])
+  const [question, setQuestion] = useState([])
+
+  const AddQuestion = () => {
+    setQuestions((questions) => [...questions, question])
+  }
+
   return (
     <div className="outline p-2 p-lg-3">
       <header>

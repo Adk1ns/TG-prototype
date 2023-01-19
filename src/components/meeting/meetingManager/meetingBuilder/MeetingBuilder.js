@@ -7,13 +7,21 @@ import ButtonTwo from '../../../buttons/ButtonTwo'
 import StepperTG from '../../../stepper/StepperTG'
 import QuestionMaker from './makers/QuestionMaker'
 import PollMaker from './makers/PollMaker'
+import { useState } from 'react'
+import AddMakerButtons from './AddMakerButtons'
 
 const MeetingBuilder = ({ meetingInProgress, setMeetingInProgress }) => {
-  console.log(meetingInProgress)
+  const [meetingComponents, setMeetingComponents] = useState([])
 
   const StartMeeting = () => {
     setMeetingInProgress((prev) => !prev)
   }
+
+  const AddMeetingItem = (type) => {
+    setMeetingComponents((meetingComponents) => [...meetingComponents, type])
+  }
+
+  console.log(meetingComponents)
 
   return (
     <div className="outline p-2 p-lg-3">
@@ -23,15 +31,8 @@ const MeetingBuilder = ({ meetingInProgress, setMeetingInProgress }) => {
       <div className="py-2 py-lg-3">
         <StepperTG />
       </div>
-      <div className="d-flex justify-content-around my-3">
-        <ButtonFour text="Intro" />
-        <ButtonFour text="Questionnaire" />
-        <ButtonFour text="Poll" />
-        <ButtonFour text="Quiz" />
-        <ButtonFour text="Graph" />
-        <ButtonFour text="Roster" />
-        <ButtonFour text="Chat" />
-      </div>
+      <AddMakerButtons AddMeetingItem={AddMeetingItem} />
+
       <QuestionMaker />
       <PollMaker />
       <div className="outline p-2 p-lg-3">
@@ -46,12 +47,6 @@ const MeetingBuilder = ({ meetingInProgress, setMeetingInProgress }) => {
         </div>
       </div>
       <div className="d-flex justify-content-end">
-        {/* <Button variant="contained" color="primary" onClick={StartMeeting}>
-          Schedule
-        </Button> */}
-        {/* <Button variant="contained" color="success" onClick={StartMeeting}>
-          Start
-        </Button> */}
         <ButtonThree text="Schedule" />
         <div onClick={StartMeeting}>
           <ButtonTwo text="Start" />
